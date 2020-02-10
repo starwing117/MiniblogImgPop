@@ -23,6 +23,7 @@
 // @include         http://*xueqiu.com/*
 // @include         https://*douban.com/*
 // @include         https://*work.alibaba-inc.com/*
+// @include         *://*fanfou.com/*
 // @grant           none
 // ==/UserScript==
 
@@ -128,6 +129,11 @@
       feedSelector:'img',
       sFrag       :'median',
       bFrag       :'raw'
+    },
+    'fanfou.com':{
+      feedSelector:'.photo',
+      sFrag       :'@100w_100h_1l.jpg',
+      bFrag       :'@596w_1l.jpg'
     },
     'work.alibaba-inc.com':{
       feedSelector:'.uxcore-nw-message-wall-item-album-thumb li',
